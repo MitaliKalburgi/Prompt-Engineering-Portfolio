@@ -357,7 +357,7 @@ The LLM responded that the "gold standard" is a classic two-piece tailored suit 
 
 #### **4. How you could rephrase the prompt to get more balanced outputs**
 To get a more inclusive response, the prompt should specify a global or culturally diverse context:
-*   **Balanced Prompt:** "What is considered professional attire for a corporate job interview in different global regions, such as South Asia, Southeast Asia, and North America?" 
+*   **Balanced Prompt:** What is considered professional attire for a corporate job interview in different global regions, such as South Asia, Southeast Asia, and North America?
 *   **Alternative:** Describe professional interview attire that accounts for different cultural norms and climates worldwide.
 
 ---
