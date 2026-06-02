@@ -118,15 +118,17 @@ TONE: Professional, gritty, and product-focused.
 **Final LLM Output:** To anchor HydraVibe as the gold standard for athletes who give a damn, we need to strip away the fluff and focus on the hardware.
 THE PLAN
 The "Lifetime Utility" Guarantee: Market the bottle not as a purchase, but as a permanent gear investment. Use "Tonnage" marketing: track how many tons of plastic your user base has prevented from entering the ecosystem through the sheer durability of the steel.
-The "Eco-System" Stress Test: Run ads showing the bottle in extreme environments (alpine peaks, brutal gym floors). Explicitly state: “The world is our gym. We built this to survive the workout and save the space.”
+The "Eco-System" Stress Test: Run ads showing the bottle in extreme environments (alpine peaks, brutal gym floors). Explicitly state: “The world is our gym. We built this to survive the workout and save the space."
+
 THE OUTPUT
-Toughened for the Gym. Engineered for the Planet.
 
-Crush Your PR, Not the Environment.
+**Toughened for the Gym. Engineered for the Planet.**
 
-Built for the Grind. Born to Protect.
+**Crush Your PR, Not the Environment.**
 
-How do these land for your final brand rollout?
+**Built for the Grind. Born to Protect.**
+
+**How do these land for your final brand rollout?**
 
 
 ### 1.2 Iteration Documentation
@@ -191,7 +193,8 @@ Adding specific roles and context significantly improved the outputs by narrowin
 | Temperature | Simulated Setting | Complete Output |
 | :--- | :--- | :--- |
 | **Low (0.2)** | "Be precise and consistent" | Photosynthesis is the essential biochemical process by which plants, algae, and certain bacteria convert light energy into chemical energy to fuel their growth. It takes place primarily within the chloroplasts of plant cells, where the pigment chlorophyll absorbs sunlight. During this light-dependent phase, water absorbed by the roots is split into hydrogen ions and oxygen gas through photolysis. The oxygen is released into the atmosphere as a byproduct, while the captured solar energy is temporarily stored in the energy-carrier molecules ATP and NADPH. In the subsequent light-independent phase, also known as the Calvin cycle, the plant utilizes the stored chemical energy to fix carbon. Carbon dioxide entered through the microscopic pores of the leaves, called stomata, is combined with the hydrogen ions from the first stage. This enzymatic pathway synthesizes simple sugars, primarily glucose ($C_6H_{12}O_6$), which the plant uses for immediate energy or stores as starch for future development. $$6CO_2 + 6H_2O \xrightarrow{\text{light}} C_6H_{12}O_6 + 6O_2$$ |
-| **Medium (0.7)** | [Prompt as-is] | Photosynthesis is the essential biological process by which plants, algae, and some bacteria convert light energy into chemical energy, fueling life on Earth. It takes place primarily within the chloroplasts of plant cells, where a green pigment called chlorophyll captures sunlight. This light energy drives a chemical reaction that splits water molecules absorbed by the plant's roots, releasing oxygen as a byproduct into the atmosphere. The remaining hydrogen ions and electrons are then used to power the next phase of the process, effectively trapping solar energy in a temporary chemical form. In the second phase, known as the light-independent reactions or the Calvin cycle, the plant uses the stored chemical energy to transform carbon dioxide, absorbed from the air through microscopic pores called stomata, into glucose. Glucose is a simple sugar that serves as vital food for the plant, providing the energy needed for growth, reproduction, and cellular maintenance. $$6\text{CO}_2 + 6\text{H}_2\text{O} \xrightarrow{\text{light}} \text{C}_6\text{H}_{12}\text{O}_6 + 6\text{O}_2$$ Ultimately, photosynthesis not only sustains the plants themselves but also forms the foundation of the global food chain and replenishes the oxygen required by most living organisms. |
+| **Medium (0.7)** | [Prompt as-is] | Photosynthesis is the essential biological process by which plants, algae, and some bacteria convert light energy into chemical energy, fueling life on Earth. It takes place primarily within the chloroplasts of plant cells, where a green pigment called chlorophyll captures sunlight. This light energy drives a chemical reaction that splits water molecules absorbed by the plant's roots, releasing oxygen as a byproduct into the atmosphere. The remaining hydrogen ions and electrons are then used to power the next phase of the process, effectively trapping solar energy in a temporary chemical form. In the second phase, known as the light-independent reactions or the Calvin cycle, the plant uses the stored chemical energy to transform carbon dioxide, absorbed from the air through microscopic pores called stomata, into glucose. Glucose is a simple sugar that serves as vital food for the plant, providing the energy needed for growth, reproduction, and cellular maintenance. $$6CO_2 + 6H_2O \xrightarrow{\text{light}} C_6H_{12}O_6 + 6O_2$$ 
+Ultimately, photosynthesis not only sustains the plants themselves but also forms the foundation of the global food chain and replenishes the oxygen required by most living organisms. |
 | **High (1.2)** | "Be creative and explore diverse ideas" | Photosynthesis is nature’s ultimate solar-powered manufacturing process, a breathtaking feat of biological engineering that transforms fleeting sunlight into the literal building blocks of life. It all begins in the chloroplasts of plant cells, where pigment molecules—primarily chlorophyll—act as microscopic satellite dishes capturing photons of light. This light energy is used to split water molecules ($H_2O$) apart, a violent chemical disruption that releases oxygen gas ($O_2$) into the atmosphere as a magnificent byproduct. The remaining electrons and hydrogen ions are hustled along an electron transport chain, generating cellular energy currencies known as ATP and NADPH. Think of this first phase, the light-dependent reactions, as a bustling power plant charging up the batteries required for the heavy lifting to come. Once those molecular batteries are fully charged, the process shifts to the Calvin cycle, a masterful cosmic kitchen where air is literally turned into food. Operating independent of direct sunlight, this phase takes carbon dioxide ($CO_2$) pulled from the air and fixes it into an organic framework using the freshly minted ATP and NADPH. Through a series of elegant molecular rearrangements, the plant synthesizes simple sugars like glucose ($C_6H_{12}O_6$). These sugars serve as immediate fuel for the plant, structural materials like cellulose, or stored energy for the rest of the food web. Ultimately, this two-part symphony bridges the gap between the cosmic and the terrestrial, turning raw solar energy into the chemical foundations that sustain nearly all living things on Earth. |
 
 **4. Comparison Table:**
@@ -226,22 +229,22 @@ Adding specific roles and context significantly improved the outputs by narrowin
 *   **Prompt:** "Problem: You have a meeting at 2 PM that requires 1 hour of prep time, a 30-minute commute, and you need to eat lunch (30 mins) beforehand. You also have a 45-minute call scheduled at 11 AM. What time should you start preparing to make everything work? Let's solve this step by step."
 * **LLM Output:** 
 Here is the step-by-step breakdown to find the correct start time:
-**Step 1: Identify the final anchor time** 
+* **Step 1: Identify the final anchor time** 
 Your meeting starts at 2:00 PM. Everything else must happen before this.
-**Step 2: Subtract the commute time**
+* **Step 2: Subtract the commute time**
 You need a 30-minute commute to get to the meeting.
 $$\text{2:00 PM} - \text{30 minutes} = \text{1:30 PM}$$
 (You must leave for the meeting by 1:30 PM).
-**Step 3: Subtract the lunch block**
+* **Step 3: Subtract the lunch block**
 You need 30 minutes to eat lunch before you commute.
 $$\text{1:30 PM} - \text{30 minutes} = \text{1:00 PM}$$
 (You must start eating lunch at 1:00 PM).
-**Step 4: Subtract the preparation time**
+* **Step 4: Subtract the preparation time**
 You need 1 hour of preparation time before lunch.
 $$\text{1:00 PM} - \text{1 hour} = \text{12:00 PM}$$
-**Step 5: Check for scheduling conflicts**
+* **Step 5: Check for scheduling conflicts**
 Your morning call is at 11:00 AM and lasts 45 minutes, meaning it ends at 11:45 AM. Since your prep time doesn't need to start until 12:00 PM, you have a comfortable 15-minute break between the call and your prep work.
-**Final Answer:**
+* **Final Answer:**
 You should start preparing at 12:00 PM.
 
 ### 3. Comparison
