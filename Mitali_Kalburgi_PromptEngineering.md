@@ -307,7 +307,7 @@ Great. Now classify these 5 test reviews using the same "Review / Sentiment" for
 | i | Negative | Negative | Negative | No change |
 | ii | Neutral | Neutral | Neutral | No change |
 | iii | Positive | Positive | Positive | No change |
-| iv | Neutral | Negative | Neutral | No change |
+| iv | Neutral | Neutral | Neutral | No change |
 | v | Negative | Negative | Negative | No change |
 
 **When is few-shot prompting most useful?**
