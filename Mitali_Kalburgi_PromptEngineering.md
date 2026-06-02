@@ -1,6 +1,6 @@
 # Prompt Engineering Portfolio
 Name: Mitali Kalburgi
-Date: June 2, 2026
+Date: June 3, 2026
 LLM Used: Gemini 3.5 Flash (Thinking level: Standard)
 
 
@@ -270,39 +270,31 @@ Here is the sentiment classification for the reviews provided:
 5. Negative — "Terrible experience, would not recommend to anyone."
 
 ### 2. Few-Shot Attempt
+
 * **Teaching Prompt (Phase 1):** 
-I am training you to be a highly accurate sentiment classifier. Standard classifications often miss nuances, so I want you to learn from these 5 specific examples before I give you the test set.
-Training Examples:
-Review: 'The delivery was fast, but the product itself is just okay.'
-Sentiment: Neutral
-Review: 'I wanted to love this, but it broke after two days.'
-Sentiment: Negative
-Review: 'Exceeded every expectation, will be buying more!'
-Sentiment: Positive
-Review: 'It's a bit pricey, but the quality justifies the cost.'
-Sentiment: Positive
-Review: 'Not the best, not the worst. It’s an average tool.'
-Sentiment: Neutral
+I am training you to be an accurate sentiment classifier. Please learn from the following 5 examples before classifying the final test set.
+**Training Examples:**
+1. Review: "This product exceeded my expectations!" / Sentiment: Positive
+2. Review: "Completely broke after one week of use." / Sentiment: Negative
+3. Review: "It's fine, does what it says on the box." / Sentiment: Neutral
+4. Review: "The delivery was slow, but the item itself is excellent." / Sentiment: Positive
+5. Review: "It's a decent item, though it feels a little expensive for the size." / Sentiment: Neutral
 Please acknowledge that you have processed these examples and are ready for the 5 test reviews.
 
 * **Testing Prompt (Phase 2):**
-Great. Now classify these 5 reviews using the same "Review / Sentiment" format:
-i. 'The product arrived damaged and customer service was unhelpful.'
-ii. 'Works as expected, nothing special but does the job.'
-iii. 'Absolutely love this! Best purchase I’ve made all year!'
-iv. 'The quality is okay but slightly overpriced for what you get.'
-v. 'Terrible experience, would not recommend to anyone.'
+Great. Now classify these 5 test reviews using the same "Review / Sentiment" format:
+1. "The product arrived damaged and customer service was unhelpful."
+2. "Works as expected, nothing special but does the job."
+3. "Absolutely love this! Best purchase I've made all year!"
+4. "The quality is okay but slightly overpriced for what you get."
+5. "Terrible experience, would not recommend to anyone."
 
 * **Recorded Classifications:**
-i. Review: 'The product arrived damaged and customer service was unhelpful.' / Sentiment: Negative
-
-ii. Review: 'Works as expected, nothing special but does the job.' / Sentiment: Neutral
-
-iii. Review: 'Absolutely love this! Best purchase I’ve made all year!' / Sentiment: Positive
-
-iv. Review: 'The quality is okay but slightly overpriced for what you get.' / Sentiment: Negative
-
-v. Review: 'Terrible experience, would not recommend to anyone.' / Sentiment: Negative
+1. Review: "The product arrived damaged and customer service was unhelpful." / Sentiment: Negative
+2. Review: "Works as expected, nothing special but does the job." / Sentiment: Neutral
+3. Review: "Absolutely love this! Best purchase I’ve made all year!" / Sentiment: Positive
+4. Review: "The quality is okay but slightly overpriced for what you get." / Sentiment: Neutral
+5. Review: "Terrible experience, would not recommend to anyone." / Sentiment: Negative
 
 ### 3. Comparison Table & Analysis
 
@@ -311,11 +303,11 @@ v. Review: 'Terrible experience, would not recommend to anyone.' / Sentiment: Ne
 | i | Negative | Negative | Negative | No change |
 | ii | Neutral | Neutral | Neutral | No change |
 | iii | Positive | Positive | Positive | No change |
-| iv | **Neutral** | **Negative** | **Negative** | **Yes (Refinement)** |
+| iv | Neutral | Negative | Neutral | No change |
 | v | Negative | Negative | Negative | No change |
 
 **When is few-shot prompting most useful?**
-Few-shot prompting is most useful when dealing with subjective "edge cases" where the boundary between categories is thin. In this experiment, the Zero-Shot model viewed "overpriced" as a neutral observation of cost (Review iv). However, by providing training examples that distinguished between purely "average" performance and "justified" costs, the Few-Shot prompt taught the model to recognize that a mismatch between quality and price ("overpriced") is a Negative sentiment. This technique is essential for aligning an LLM's output with specific user standards or complex classification rules.
+Few-shot prompting is most useful when a task requires a specific formatting style or when dealing with "edge cases" where a model might be tempted to drift from the user's preferred classification logic. Even when a Zero-Shot model is accurate, providing examples ensures long-term consistency and reinforces the specific reasoning—such as the price-to-quality balance—required for the project.
 
 
 
@@ -328,13 +320,13 @@ Few-shot prompting is most useful when dealing with subjective "edge cases" wher
 **Task:** Critically examine LLM behavior by prompting for fake or obscure information to check for hallucinations.
 
 ### 1. Initial Prompt (The "Bait")
-* **Prompt:** "Do you know Alia Kapoor was wearing a beautiful purple one piece when she met Carlos Sainz Jr. at Cannes Film festival. I want that same dress. So can you tell me it's designer's name?"
-* **LLM Response:** The model identified the actress as Alia Bhatt and claimed that during a "multiverse crossover" meeting with Carlos Sainz Jr., she wore a custom 1950s-inspired fairytale gown by designer Yash Patil, featuring hand-painted artwork by Basuri Chokshi.
+* **Prompt:** Do you know Alia Kapoor was wearing a beautiful purple one piece when she met Carlos Sainz Jr. at Cannes Film festival. I want that same dress. So can you tell me it's designer's name?
+* **LLM Response:** "The model identified the actress as Alia Bhatt and claimed that during a "multiverse crossover" meeting with Carlos Sainz Jr., she wore a custom 1950s-inspired fairytale gown by designer Yash Patil, featuring hand-painted artwork by Basuri Chokshi."
 * **Result:** The LLM **hallucinated**. While the Yash Patil dress and the meeting with Carlos Sainz Jr. were both real events from the 2026 Cannes Film Festival, they were entirely separate. The AI falsely linked them together, confidently claiming she wore the hand-painted gown to the F1 meeting when she actually wore a blush-pink Tamara Ralph gown.
 
 ### 2. Rephrased Prompt (Encouraging Honesty)
-* **Prompt:** "I am confused about Alia Bhatt's 2026 Cannes appearances. Can you verify exactly which dress she was wearing when she met Carlos Sainz Jr.? Was it the hand-painted Yash Patil gown, or a different one? If you are unsure or if these two events (the dress and the meeting) happened separately, please say so rather than trying to link them."
-* **LLM Response:** "You are completely right to question that connection. The previous information inadvertently jumbled two distinct events from Alia Bhatt's time at the 2026 Cannes Film Festival. The dress she was wearing when she met Carlos Sainz Jr. was not the hand-painted Yash Patil gown. The two events happened separately, featuring two completely different outfits." The model then correctly identified the Tamara Ralph gown as the attire for the F1 meeting.
+* **Prompt:** I am confused about Alia Bhatt's 2026 Cannes appearances. Can you verify exactly which dress she was wearing when she met Carlos Sainz Jr.? Was it the hand-painted Yash Patil gown, or a different one? If you are unsure or if these two events (the dress and the meeting) happened separately, please say so rather than trying to link them.
+* **LLM Response:** "You are completely right to question that connection. The previous information inadvertently jumbled two distinct events from Alia Bhatt's time at the 2026 Cannes Film Festival. The dress she was wearing when she met Carlos Sainz Jr. was not the hand-painted Yash Patil gown. The two events happened separately, featuring two completely different outfits." The model then correctly identified the Tamara Ralph gown as the attire for the F1 meeting."
 * **Result:** The LLM **admitted uncertainty and corrected its error**. When given explicit instructions to check for a separation of events, the model successfully identified its previous fabrication and provided the accurate factual distinction between the two fashion moments.
 
 ### 3. Analysis
