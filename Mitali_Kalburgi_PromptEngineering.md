@@ -315,7 +315,6 @@ Few-shot prompting is most useful when a task requires a specific formatting sty
 
 ## Part 4: Responsible AI & Limitations
 
----
 
 ### 4.1 Testing for Hallucinations
 
