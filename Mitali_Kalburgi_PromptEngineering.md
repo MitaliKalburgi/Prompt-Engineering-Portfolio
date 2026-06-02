@@ -180,7 +180,7 @@ In this project, Role Assignment and Context Setting were utilized in all three 
 ### Impact on Outputs
 Adding specific roles and context significantly improved the outputs by narrowing the AI’s focus and eliminating generic "filler" text. By assigning a persona like the **LEGO Master Builder**, the AI adopted a consistent, high-energy tone that resonated with the target audience's level of understanding. Furthermore, setting context—such as referencing the **"Data-Driven Growth" case study** in the email—transformed a standard template into a personalized, credible professional document. These techniques ensured the final results were not only accurate but also suited to what each scenario actually needed.
 
-
+---
 
 ## Part 2: Temperature & Parameter Control
 
@@ -212,7 +212,7 @@ Adding specific roles and context significantly improved the outputs by narrowin
 *   **When to use high temperature:** High temperature settings (1.0 - 1.5) are best for creative writing, brainstorming marketing slogans, or generating unique world-building ideas for fiction. It is also useful when you want to avoid repetitive language and need the AI to explore diverse ways of expressing a thought.
 *   **Which temperature worked best and why:** For the task of explaining photosynthesis, the **Medium Temperature** worked best because it maintained a high level of scientific accuracy while remaining much more readable and engaging than the low-temperature version. While the high-temperature version was the most "fun" to read, its heavy use of metaphors might distract a student who is trying to learn the specific chemical steps for the first time.
 
-
+---
 
 ## Part 3: Strategic Prompting Techniques
 
@@ -311,7 +311,7 @@ Great. Now classify these 5 test reviews using the same "Review / Sentiment" for
 **When is few-shot prompting most useful?**
 Few-shot prompting is most useful when a task requires a specific formatting style or when dealing with "edge cases" where a model might be tempted to drift from the user's preferred classification logic. Even when a Zero-Shot model is accurate, providing examples ensures long-term consistency and reinforces the specific reasoning—such as the price-to-quality balance—required for the project.
 
-
+---
 
 ## Part 4: Responsible AI & Limitations
 
