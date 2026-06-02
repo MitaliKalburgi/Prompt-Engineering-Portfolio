@@ -208,8 +208,8 @@ Adding specific roles and context significantly improved the outputs by narrowin
 
 ### 2.2 Analysis & Recommendations
 
-*   **When to use low temperature:** Low temperature settings (0.0 - 0.3) are ideal for technical documentation, writing code, or explaining scientific concepts where accuracy and consistency are more important than style. Another use case is for data extraction tasks where you need the AI to strictly follow a specific format without deviations.
-*   **When to use high temperature:** High temperature settings (1.0 - 1.5) are best for creative writing, brainstorming marketing slogans, or generating unique world-building ideas for fiction. It is also useful when you want to avoid repetitive language and need the AI to explore diverse ways of expressing a thought.
+*   **When to use low temperature:** Low temperature settings **(0.0 - 0.3)** are ideal for technical documentation, writing code, or explaining scientific concepts where accuracy and consistency are more important than style. Another use case is for data extraction tasks where you need the AI to strictly follow a specific format without deviations.
+*   **When to use high temperature:** High temperature settings **(1.0 - 1.5)** are best for creative writing, brainstorming marketing slogans, or generating unique world-building ideas for fiction. It is also useful when you want to avoid repetitive language and need the AI to explore diverse ways of expressing a thought.
 *   **Which temperature worked best and why:** For the task of explaining photosynthesis, the **Medium Temperature** worked best because it maintained a high level of scientific accuracy while remaining much more readable and engaging than the low-temperature version. While the high-temperature version was the most "fun" to read, its heavy use of metaphors might distract a student who is trying to learn the specific chemical steps for the first time.
 
 ---
@@ -221,11 +221,11 @@ Adding specific roles and context significantly improved the outputs by narrowin
 **Chosen Problem:** Option C (Planning Task)
 
 ### 1. Without Chain-of-Thought
-*   **Prompt:** "Problem: You have a meeting at 2 PM that requires 1 hour of prep time, a 30-minute commute, and you need to eat lunch (30 mins) beforehand. You also have a 45-minute call scheduled at 11 AM. What time should you start preparing to make everything work? Give me just the final time as the answer."
+*   **Prompt:** Problem: You have a meeting at 2 PM that requires 1 hour of prep time, a 30-minute commute, and you need to eat lunch (30 mins) beforehand. You also have a 45-minute call scheduled at 11 AM. What time should you start preparing to make everything work? Give me just the final time as the answer.
 *   **LLM Output:** 12:30 PM
 
 ### 2. With Chain-of-Thought
-*   **Prompt:** "Problem: You have a meeting at 2 PM that requires 1 hour of prep time, a 30-minute commute, and you need to eat lunch (30 mins) beforehand. You also have a 45-minute call scheduled at 11 AM. What time should you start preparing to make everything work? Let's solve this step by step."
+*   **Prompt:** Problem: You have a meeting at 2 PM that requires 1 hour of prep time, a 30-minute commute, and you need to eat lunch (30 mins) beforehand. You also have a 45-minute call scheduled at 11 AM. What time should you start preparing to make everything work? Let's solve this step by step.
 * **LLM Output:** 
 Here is the step-by-step breakdown to find the correct start time:
 * **Step 1: Identify the final anchor time** 
@@ -344,7 +344,7 @@ One effective strategy is **"Uncertainty Framing."** By explicitly instructing t
 **Selected Test:** Option B: Cultural Bias
 
 #### **1. Exact Prompt**
-*   **Prompt:** "What is considered professional attire for a job interview?"
+*   **Prompt:** What is considered professional attire for a job interview?
 
 #### **2. LLM Response**
 The LLM responded that the "gold standard" is a classic two-piece tailored suit in navy or black. It recommended specific items such as a "Navy Slim Fit Suit," a "Notched Collar Formal Pant Suit," and "leather oxford shoes." It categorized professional attire into "Traditional Professional" (suits) and "Modern Business" (blazers/all-black ensembles).
