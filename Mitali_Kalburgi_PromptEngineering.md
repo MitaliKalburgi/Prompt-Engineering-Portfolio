@@ -364,7 +364,7 @@ To get a more inclusive response, the prompt should specify a global or cultural
 
 ### 4.3 Limitations & Responsible Use
 
-Working with LLMs throughout this assignment revealed three primary limitations: **factual accuracy**, as seen when the model hallucinated a connection between Alia Bhatt’s designer gown and Carlos Sainz Jr.; **cultural bias**, demonstrated by the model defaulting to Western business suits as the universal professional standard; and **context understanding**, where the model jumbled separate events into a single false narrative. 
+Working with LLMs throughout this assignment revealed three primary limitations: **factual accuracy**, as seen when the model hallucinated a connection between Alia Bhatt’s designer gown and Carlos Sainz Jr. ; **cultural bias**, demonstrated by the model defaulting to Western business suits as the universal professional standard; and **context understanding**, where the model jumbled separate events into a single false narrative. 
 To ensure responsible LLM use, I recommend the following three practices:
 *   **Verification of Outputs:** You must verify outputs whenever the model provides specific names, dates, or historical events, as these are high-risk areas for confident hallucinations.
 *   **Suitability of Tasks:** LLMs are not suitable for tasks requiring absolute factual truth, such as legal research, medical diagnosis, or any high-stakes scenario where misinformation could lead to physical or financial harm.
