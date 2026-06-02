@@ -1,6 +1,8 @@
 # Prompt Engineering Portfolio
 Name: Mitali Kalburgi
+
 Date: June 3, 2026
+
 LLM Used: Gemini 3.5 Flash (Thinking level: Standard)
 
 
