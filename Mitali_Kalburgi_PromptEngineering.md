@@ -295,9 +295,13 @@ v. 'Terrible experience, would not recommend to anyone.'
 
 * **Recorded Classifications:**
 i. Review: 'The product arrived damaged and customer service was unhelpful.' / Sentiment: Negative
+
 ii. Review: 'Works as expected, nothing special but does the job.' / Sentiment: Neutral
+
 iii. Review: 'Absolutely love this! Best purchase I’ve made all year!' / Sentiment: Positive
+
 iv. Review: 'The quality is okay but slightly overpriced for what you get.' / Sentiment: Negative
+
 v. Review: 'Terrible experience, would not recommend to anyone.' / Sentiment: Negative
 
 ### 3. Comparison Table & Analysis
